@@ -23,12 +23,12 @@ Once you have the file open, insert the provided code for IP matching in the app
 		private function getClientIP(): string {
 		        if (!empty($_SERVER['HTTP_X_FORWARDED_FOR'])) {
 		                $ipList = explode(',', $_SERVER['HTTP_X_FORWARDED_FOR']);
-		                return trim($ipList[0]); // Pierwszy adres w nagłówku X-Forwarded-For to klient
+		                return trim($ipList[0]); // The first address in the X-Forwarded-For header is the client
 		        }
 		        if (!empty($_SERVER['HTTP_CLIENT_IP'])) {
 		                return $_SERVER['HTTP_CLIENT_IP'];
 		        }
-		        return $_SERVER['REMOTE_ADDR']; // Domyślnie pobiera z REMOTE_ADDR
+		        return $_SERVER['REMOTE_ADDR']; // By default it takes from REMOTE_ADDR
 		}
 
 
