@@ -4,10 +4,10 @@ Description
 
 This guide explains how to configure IP whitelisting for bypassing two-factor authentication (2FA) in Nextcloud. Users connecting from specified IP ranges will not be prompted for 2FA.
 
-## 1. Log in via CLI to Your Nextcloud Container/VM
+### 1. Log in via CLI to Your Nextcloud Container/VM
 First, log in to your Nextcloud server using the command line. This could be either a Docker container or a VM running Nextcloud.
 
-2. Edit the Manager.php File
+### 2. Edit the Manager.php File
 Next, you'll need to modify the Nextcloud 2FA manager to check for whitelisted IPs. This will involve editing the file Manager.php.
 
 Run the following command to open the file in a text editor (such as nano):
@@ -75,7 +75,7 @@ Once you have the file open, insert the provided code for IP matching in the app
 			}
 ```
 
-## Edit the config.php File
+### 3. Edit the config.php File
 Next, you need to define the whitelisted IPs in Nextcloud's config.php file.
 
 Run the following command to open the configuration file:
@@ -91,7 +91,7 @@ In the configuration file, add the whitelisted IPs under the twofactor_whitelist
 
 ```
 
-## 4. Test the Setup
+### 4. Test the Setup
 
 Now that you’ve made the changes, it’s time to test them.
 
