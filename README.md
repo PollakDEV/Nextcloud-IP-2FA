@@ -82,6 +82,7 @@ Run the following command to open the configuration file:
 `sudo nano /var/www/nextcloud/config/config.php`
 
 In the configuration file, add the whitelisted IPs under the twofactor_whitelist_ips key. For example:
+
 ```
   'twofactor_whitelist_ips' =>
   array (
@@ -94,8 +95,8 @@ In the configuration file, add the whitelisted IPs under the twofactor_whitelist
 
 Now that you’ve made the changes, it’s time to test them.
 
-    Try logging in from a whitelisted IP address. You should be able to log in without being prompted for 2FA.
-    Test from a non-whitelisted IP address. You should still be asked to provide 2FA.
+Try logging in from a whitelisted IP address. You should be able to log in without being prompted for 2FA.
+Test from a non-whitelisted IP address. You should still be asked to provide 2FA.
 
 If everything works as expected, you've successfully configured IP whitelisting for 2FA in Nextcloud!
 
