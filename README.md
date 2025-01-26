@@ -15,7 +15,7 @@ Run the following command to open the file in a text editor (such as nano):
 
 Once you have the file open, insert the provided code for IP matching in the appropriate place.
 
-```YAML
+```
         /**
          * Determine whether the user must provide a second factor challenge
          */
@@ -83,7 +83,7 @@ Run the following command to open the configuration file:
 
 In the configuration file, add the whitelisted IPs under the twofactor_whitelist_ips key. For example:
 
-```YAML
+```
   'twofactor_whitelist_ips' =>
   array (
     0 => '10.0.0.0/24',
