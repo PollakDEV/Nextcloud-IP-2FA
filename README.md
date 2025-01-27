@@ -87,6 +87,7 @@ In the configuration file, add the whitelisted IPs under the twofactor_whitelist
   'twofactor_whitelist_ips' =>
   array (
     0 => '10.0.0.0/24',
+    1 => '192.168.1.15/24',
   ),
 
 ```
