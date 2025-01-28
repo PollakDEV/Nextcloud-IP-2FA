@@ -96,7 +96,7 @@ In the configuration file, add the whitelisted IPs under the twofactor_whitelist
 
 Now that you’ve made the changes, it’s time to test them.
 
-First restart nextcloud and then try logging in from a whitelisted IP address. You should be able to log in without being prompted for 2FA.
+Restart nextcloud and then try logging in from a whitelisted IP address. You should be able to log in without being prompted for 2FA.
 Then test from a non-whitelisted IP address. You should still be asked to provide 2FA.
 
 If everything works as expected, you've successfully configured IP whitelisting for 2FA in Nextcloud!
